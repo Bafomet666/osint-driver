@@ -26,22 +26,22 @@ page_1 = fr'''{FIOL}
 def driver():
     os.system('clear')
     print(page_1)
-    print('{REDL} \nУстановка pycurl\n{FIOL}')
+    print(f'{REDL} \nУстановка pycurl\n{FIOL}')
     os.system('sudo apt install libcurl4-gnutls-dev librtmp-dev')
     os.system('sudo apt-get install libcurl4-gnutls-dev librtmp-dev')
     os.system('pip3 install setuptools')
     os.system('pip3 install pycurl')
     os.system('pip3 install grab')
    
-    print('{REDL} \nУстановка webdriver\n{FIOL}')
+    print(f'{REDL} \nУстановка webdriver\n{FIOL}')
     os.system('sudo chmod +x /usr/local/bin/geckodriver')
     os.system('sudo mv geckodriver /usr/local/bin/geckodriver')
     os.system('sudo chown root:root /usr/local/bin/geckodriver')
     
-    print('{REDL} \nУстановка vlc\n{FIOL}')
+    print(f'{REDL} \nУстановка vlc\n{FIOL}')
     os.system('pip3 install python-vlc')
     os.system('sudo apt-get install vlc')
-    print('{REDL} \nУстановка завершена')
+    print(f'{REDL} \nУстановка завершена')
     os.system('exit')
     
 driver()
