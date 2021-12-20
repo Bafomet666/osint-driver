@@ -2,7 +2,10 @@
 
 import os
 
-page_1 = fr'''
+FIOL = H = "\033[95m"
+REDL = R = "\033[0;31m"
+
+page_1 = fr'''{FIOL}
 
 
   _____     ______     __     __   __   ______     ______    
@@ -11,7 +14,7 @@ page_1 = fr'''
   \ \____-  \ \_\ \_\  \ \_\  \ \__|    \ \_____\  \ \_\ \_\ 
    \/____/   \/_/ /_/   \/_/   \/_/      \/_____/   \/_/ /_/ 
                                                             
-
+{REDL}
  Установка pycurl, geckodriver + selenium, vlc
  
  driver osintsan pro 5+
@@ -21,22 +24,24 @@ page_1 = fr'''
 
 
 def driver():
-    print(' Установка pycurl')
+    os.system('clear')
+    print(page_1)
+    print('{REDL} \nУстановка pycurl\n{FIOL}')
     os.system('sudo apt install libcurl4-gnutls-dev librtmp-dev')
     os.system('sudo apt-get install libcurl4-gnutls-dev librtmp-dev')
     os.system('pip3 install setuptools')
     os.system('pip3 install pycurl')
     os.system('pip3 install grab')
    
-    print(' Установка webdriver')
+    print('{REDL} \nУстановка webdriver\n{FIOL}')
     os.system('sudo chmod +x /usr/local/bin/geckodriver')
     os.system('sudo mv geckodriver /usr/local/bin/geckodriver')
     os.system('sudo chown root:root /usr/local/bin/geckodriver')
     
-    print(' Установка vlc')
+    print('{REDL} \nУстановка vlc\n{FIOL}')
     os.system('pip3 install python-vlc')
     os.system('sudo apt-get install vlc')
-    print(' \nУстановка завершена')
+    print('{REDL} \nУстановка завершена')
     os.system('exit')
     
 driver()
