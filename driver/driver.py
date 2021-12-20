@@ -30,3 +30,6 @@ def driver():
     os.system('sudo apt-get install vlc')
     
     
+driver()
+    
+    
