@@ -37,7 +37,7 @@ def driver():
     os.system('sudo chmod +x /usr/local/bin/geckodriver')
     os.system('sudo mv geckodriver /usr/local/bin/geckodriver')
     os.system('sudo chown root:root /usr/local/bin/geckodriver')
-    print(f' {REDL} \nУстановлено')
+    print(f' {REDL} \n Установлено')
     
     print(f'{REDL} \n Установка vlc\n{FIOL}')
     os.system('pip3 install python-vlc')
