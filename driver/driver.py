@@ -39,4 +39,4 @@ def driver():
     print(' \nУстановка завершена')
     os.system('exit')
     
-    
+driver()
