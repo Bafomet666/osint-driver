@@ -5,3 +5,7 @@
 
 
 ![alt tag](https://github.com/Bafomet666/osint-driver/blob/main/Screenshot%20at%202022-01-12%2000-19-52.png)
+
+Работает на python3.9
+
+Запуск: python3 driver.py
