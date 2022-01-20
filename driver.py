@@ -28,9 +28,9 @@ page_1 = fr'''{GRNL}
  
  {REDL}[ {GNSL}2 {REDL}]  {WHSL}Установка {GNSL} geckodriver                      {REDL}[ {GNSL}6 {REDL}]  {WHSL}Установить {GNSL}selenium
  
- {REDL}[ {GNSL}3 {REDL}]  {WHSL}Основные зависимости                        {REDL}[ {GNSL}7 {REDL}]
+ {REDL}[ {GNSL}3 {REDL}]  {WHSL}Основные зависимости                        {REDL}[ {GNSL}7 {REDL}] {WHSL}Установка стикеров в терминал
  
- {REDL}[ {GNSL}4 {REDL}]  {WHSL}Покинуть, очистить процессы
+ {REDL}[ {GNSL}0 {REDL}]  {WHSL}Покинуть, очистить процессы
  
 '''
 
@@ -72,7 +72,7 @@ def driver():
             print(page_1)
             print(' \n Установка прошла успешно\n')
 
-        elif option == '4':
+        elif option == '0':
             os.system('pkill -9 -f driver.py')
 
         elif option == '5':
@@ -93,6 +93,13 @@ def driver():
             os.system("clear")
             print(page_1)
             print(page_2)
+
+        elif option == '7':
+            os.system('sudo apt remove fonts-noto-color-emoji')
+            os.system('sudo apt install fonts-noto-color-emoji')
+            os.system("clear")
+            print(page_1)
+            print(' Успешно')
 
 
 driver()
